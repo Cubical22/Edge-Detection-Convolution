@@ -53,7 +53,7 @@ def calc_convolution(h, w, img):
 
 
 if __name__ == '__main__':
-    img = Image.open("test-image.png") # opening the image
+    img = Image.open("./../test-image.png") # opening the image
     print("the process started...")
 
     for h in range(img.height - len(convolve_cube)): # going through the image pixel by pixel up to the edges
@@ -78,7 +78,7 @@ if __name__ == '__main__':
         elif h == img.height:
             print("almost done...")
 
-    img.save("output.png") # saving the image
+    img.save("./../output.png") # saving the image
     print("done...!")
 
     img.close() # closing the stream and image
